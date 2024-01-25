@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="display:flex;" id="nummersystem">
+
+    </div>
+    <div style="display: flex;" id="nummersystem2">
+
+    </div>
+    <div style="display: flex;" id="nummersystem3">
+
+    </div>
+    <script>
+        hai1()
+        function hai1() {
+            document.getElementById('nummersystem').innerHTML = `
+                <button onclick="hai4()">
+                    ◀
+                 </button>
+                <div style="width: 200px; text-align: center;">
+                    <img src="bilder/head1.png" />
+                 </div>
+                <button onclick="hai2()">
+                  ▶
+                </button>`;
+        }
+
+        hai2()
+        function hai2() {
+            document.getElementById('nummersystem').innerHTML = `
+                <button onclick="hai1()">
+                    ◀
+                 </button>
+                <div style="width: 200px; text-align: center;">
+                    <img src="bilder/head2.png" />
+                 </div>
+                <button  onclick="hai3()">
+                  ▶
+                </button>`;
+        }
+
+        hai3()
+        function hai3() {
+            document.getElementById('nummersystem').innerHTML = `
+                <button onclick="hai2()">
+                    ◀
+                 </button>
+                <div style="width: 200px; text-align: center;">
+                    <img src="bilder/head3.png" />
+                 </div>
+                <button  onclick="hai4()">
+                  ▶
+                </button>`;
+        }
+
+        hai4()
+        function hai4() {
+            document.getElementById('nummersystem').innerHTML = `
+                <button onclick="hai3()">
+                    ◀
+                 </button>
+                <div style="width: 200px; text-align: center;">
+                    <img src="bilder/head4.png" />
+                 </div>
+                <button  onclick="hai1()">
+                  ▶
+                </button>`;
+        }
+        hai6()
+        function hai6() {
+            document.getElementById('nummersystem2').innerHTML = `
+                <button onclick="hai5()">
+                    ◀
+                 </button>
+                <div style="width: 200px; text-align: center;">
+                    <img src="bilder/body1.png" />
+                 </div>
+                <button  onclick="hai7()">
+                  ▶
+                </button>`;
+        }
+        hai5()
+        function hai5() {
+            document.getElementById('nummersystem2').innerHTML = `
+                <button onclick="hai8()">
+                    ◀
+                 </button>
+                <div style="width: 200px; text-align: center;">
+                    <img src="bilder/body2.png" />
+                 </div>
+                <button  onclick="hai6()">
+                  ▶
+                </button>`;
+
+
+
+        }
+
+
+        hai7()
+        function hai7() {
+            document.getElementById('nummersystem2').innerHTML = `
+                <button onclick="hai6()">
+                    ◀
+                 </button>
+                <div style="width: 200px; text-align: center;">
+                    <img src="bilder/body3.png" />
+                 </div>
+                <button  onclick="hai8()">
+                  ▶
+                </button>`;
+
+
+
+        }
+
+        hai8()
+        function hai8() {
+            document.getElementById('nummersystem2').innerHTML = `
+                <button onclick="hai7()">
+                    ◀
+                 </button>
+                <div style="width: 200px; text-align: center;">
+                    <img src="bilder/body4.png" />
+                 </div>
+                <button  onclick="hai5()">
+                  ▶
+                </button>`;
+        }
+
+        hai9()
+        function hai9() {
+            document.getElementById('nummersystem3').innerHTML = `
+                <button onclick="hai12()">
+                    ◀
+                 </button>
+                <div style="width: 200px; text-align: center;">
+                    <img src="bilder/legs1.png" />
+                 </div>
+                <button  onclick="hai10()">
+                  ▶
+                </button>`;
+
+        }
+        hai10()
+        function hai10() {
+            document.getElementById('nummersystem3').innerHTML = `
+                <button onclick="hai9()">
+                    ◀
+                 </button>
+                <div style="width: 200px; text-align: center;">
+                    <img src="bilder/legs2.png" />
+                 </div>
+                <button  onclick="hai11()">
+                  ▶
+                </button>`;
+
+        }
+        hai11()
+        function hai11() {
+            document.getElementById('nummersystem3').innerHTML = `
+                <button onclick="hai10()">
+                    ◀
+                 </button>
+                <div style="width: 200px; text-align: center;">
+                    <img src="bilder/legs3.png" />
+                 </div>
+                <button  onclick="hai12()">
+                  ▶
+                </button>`;
+
+        }
+        hai12()
+        function hai12() {
+            document.getElementById('nummersystem3').innerHTML = `
+                <button onclick="hai11()">
+                    ◀
+                 </button>
+                <div style="width: 200px; text-align: center;">
+                    <img src="bilder/legs4.png" />
+                 </div>
+                <button  onclick="hai9()">
+                  ▶
+                </button>`; 
+
+        }
+    </script>
+
+</body>
+
+</html>
